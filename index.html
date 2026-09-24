@@ -63,7 +63,7 @@
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
                 <a href="#ecosistema" class="hover:text-menfa-orange transition-colors">Ecosistema</a>
                 <a href="#pilares" class="hover:text-menfa-orange transition-colors">Pilares</a>
-                <a href="#simulador-consola" class="hover:text-menfa-orange transition-colors">Simuladores</a>
+                <a href="#simuladores" class="hover:text-menfa-orange transition-colors">Simuladores</a>
                 <a href="#normativas" class="hover:text-menfa-orange transition-colors">Normativas</a>
                 <a href="#contacto" class="hover:text-menfa-orange transition-colors">Empresas</a>
             </nav>
@@ -75,7 +75,7 @@
         </div>
     </header>
 
-    <!-- HERO SECTION (Pieza Madre Visual) -->
+    <!-- HERO SECTION -->
     <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-grid-pattern">
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-menfa-violet/40 blur-[120px] rounded-full pointer-events-none"></div>
         <div class="absolute top-1/3 right-10 w-[400px] h-[250px] bg-menfa-orange/20 blur-[100px] rounded-full pointer-events-none"></div>
@@ -99,7 +99,7 @@
                     </p>
 
                     <div class="pt-4 flex flex-wrap gap-4 items-center">
-                        <a href="#simulador-consola" class="bg-menfa-orange hover:bg-orange-600 text-white font-bold px-7 py-3.5 rounded shadow-lg transition-all flex items-center gap-2">
+                        <a href="#simuladores" class="bg-menfa-orange hover:bg-orange-600 text-white font-bold px-7 py-3.5 rounded shadow-lg transition-all flex items-center gap-2">
                             Probar Simuladores en Vivo 🚀
                         </a>
                         <a href="#normativas" class="border border-gray-600 hover:border-menfa-orange text-gray-300 hover:text-white font-semibold px-6 py-3.5 rounded transition-all bg-menfa-dark/50">
@@ -179,19 +179,14 @@
                     <span class="text-xs font-mono text-orange-400 uppercase tracking-wider block">Formación Profesional & Technical Upskilling</span>
                 </div>
 
-                <!-- Pilar 2: SIMULADORES CON LINKS DIRECTOS -->
+                <!-- Pilar 2 -->
                 <div class="bg-menfa-dark border border-menfa-gray p-8 rounded-xl hover:border-menfa-violet transition-all duration-300 group">
                     <div class="w-12 h-12 bg-menfa-violet/30 border border-menfa-violet text-purple-300 rounded-lg flex items-center justify-center font-mono font-bold text-lg mb-6 group-hover:bg-menfa-violet group-hover:text-white transition-all">02</div>
                     <h3 class="text-xl font-bold text-white mb-3">Simuladores Operativos</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-6">Entrenamiento virtual en consolas SCADA, Perforación Avanzada (ExxonMobil Top 40) y Planta de Tratamiento de Crudo (PTC MENFA).</p>
-                    <div class="space-y-2 pt-2">
-                        <a href="https://share.streamlit.io/" target="_blank" class="block text-center bg-menfa-violet hover:bg-purple-900 text-white font-mono text-xs py-2 rounded transition-all">
-                            🏗️ Simulador de Perforación Pro 3.0 ↗
-                        </a>
-                        <a href="#simulador-consola" class="block text-center border border-menfa-gray hover:border-menfa-orange text-gray-300 text-xs font-mono py-2 rounded transition-all">
-                            🖥️ Ver Consola Embebida
-                        </a>
-                    </div>
+                    <a href="#simuladores" class="inline-block text-xs font-mono text-purple-300 hover:text-white uppercase tracking-wider underline">
+                        Ver Consolas Activas ↓
+                    </a>
                 </div>
 
                 <!-- Pilar 3 -->
@@ -221,28 +216,95 @@
         </div>
     </section>
 
-    <!-- NUEVA SECCIÓN: SIMULADORES EN VIVO EMBEBIDOS -->
-    <section id="simulador-consola" class="py-20 bg-menfa-dark border-t border-menfa-gray">
+    <!-- HUB DE SIMULADORES INTERACTIVOS B2B -->
+    <section id="simuladores" class="py-20 bg-menfa-dark border-t border-menfa-gray">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+            
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
                 <div>
-                    <span class="text-xs font-mono text-menfa-orange uppercase tracking-widest">Entrenamiento Virtual de Procesos</span>
-                    <h2 class="text-3xl font-extrabold text-white">Consola de Simulación Operativa MENFA</h2>
-                    <p class="text-gray-400 text-xs font-mono mt-1">Acceso interactivo en vivo al Gemelo Digital y Room de Operaciones</p>
+                    <span class="text-xs font-mono text-menfa-orange uppercase tracking-widest">• Centro de Entrenamiento Virtual</span>
+                    <h2 class="text-3xl font-extrabold text-white mt-1">Consolas Operativas & Gemelos Digitales</h2>
+                    <p class="text-gray-400 text-sm mt-2 max-w-xl">
+                        Plataformas de simulación interactiva desarrolladas bajo física real de proceso, protocolos ExxonMobil Top 40 y normativa internacional.
+                    </p>
                 </div>
-                <a href="https://share.streamlit.io/" target="_blank" class="bg-menfa-orange hover:bg-orange-600 text-white font-mono text-xs px-5 py-3 rounded shadow transition-all">
-                    Abrir en Pantalla Completa ↗
-                </a>
+                <div class="font-mono text-xs text-orange-400 bg-menfa-carbon px-4 py-2 rounded border border-gray-800">
+                    ESTATUS: SISTEMA OPERATIVO
+                </div>
             </div>
 
-            <!-- Frame donde corre la App de Streamlit -->
-            <div class="w-full h-[800px] bg-menfa-carbon border border-menfa-gray rounded-2xl overflow-hidden shadow-2xl relative">
-                <iframe 
-                    src="https://share.streamlit.io/" 
-                    class="w-full h-full border-0"
-                    allow="geolocation; microphone; camera"
-                    title="Consola de Simulación MENFA">
-                </iframe>
+            <!-- Grilla de Tarjetas de Simuladores -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Simulador 1: Perforación Pro -->
+                <div class="bg-menfa-carbon border border-menfa-gray rounded-xl p-6 flex flex-col justify-between hover:border-menfa-orange transition-all duration-300 group glow-orange">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-mono bg-menfa-orange/20 text-orange-400 px-2.5 py-1 rounded border border-menfa-orange/30">VERSION 3.0</span>
+                            <span class="text-xs font-mono text-gray-400">ExxonMobil Top 40</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-menfa-orange transition-colors">Simulador de Perforación Pro</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                            Consola interactiva con física de fondo, control direccional MWD, panel de control de presiones (BOP), prevención de Stick-Slip y monitoreo de lecho de recortes.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="border-t border-gray-800 pt-4 mb-4 flex justify-between text-[11px] font-mono text-gray-400">
+                            <span>SISTEMA: DRILLING</span>
+                            <span>CERTIFICACIÓN: SI</span>
+                        </div>
+                        <a href="https://share.streamlit.io/" target="_blank" class="w-full bg-menfa-orange hover:bg-orange-600 text-white font-mono text-xs font-bold py-3 px-4 rounded transition-all text-center block shadow">
+                            Lanzar Consola de Perforación ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Simulador 2: PTC MENFA (SCADA) -->
+                <div class="bg-menfa-carbon border border-menfa-gray rounded-xl p-6 flex flex-col justify-between hover:border-menfa-violet transition-all duration-300 group glow-violet">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-mono bg-menfa-violet/40 text-purple-300 px-2.5 py-1 rounded border border-menfa-violet">SCADA / NDT</span>
+                            <span class="text-xs font-mono text-gray-400">PTC MENFA</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">Planta Tratamiento de Crudo</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                            Simulación de Análisis Nodal IPR-VLP, separación trifásica V-01, alertas Carryover/Blowby y módulo de gestión de Mantenimiento e Integridad.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="border-t border-gray-800 pt-4 mb-4 flex justify-between text-[11px] font-mono text-gray-400">
+                            <span>SISTEMA: PROCESS</span>
+                            <span>CUMPLIMIENTO: API/ASME</span>
+                        </div>
+                        <a href="https://share.streamlit.io/" target="_blank" class="w-full bg-menfa-violet hover:bg-purple-900 text-white font-mono text-xs font-bold py-3 px-4 rounded transition-all text-center block shadow">
+                            Lanzar Consola PTC SCADA ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Simulador 3: Control de Pozos & BOP -->
+                <div class="bg-menfa-carbon border border-menfa-gray rounded-xl p-6 flex flex-col justify-between hover:border-menfa-orange transition-all duration-300 group">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-mono bg-white/10 text-gray-300 px-2.5 py-1 rounded">WELL CONTROL</span>
+                            <span class="text-xs font-mono text-gray-400">IWCF Level</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-menfa-orange transition-colors">Control de Pozos & BOP</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                            Maniobras de Shut-In, gestión de Choke Manifold, cálculo de contrapresión de gas y mitigación de brotes en tiempo real.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="border-t border-gray-800 pt-4 mb-4 flex justify-between text-[11px] font-mono text-gray-400">
+                            <span>SISTEMA: SAFETY</span>
+                            <span>MODO: CONTINGENCIA</span>
+                        </div>
+                        <a href="https://share.streamlit.io/" target="_blank" class="w-full border border-gray-700 hover:border-menfa-orange text-gray-300 hover:text-white font-mono text-xs font-bold py-3 px-4 rounded transition-all text-center block bg-menfa-dark">
+                            Lanzar Consola de Control ↗
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
