@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENFA — Ecosistema de Capacitación y Tecnología Industrial</title>
+    <meta name="description" content="Plataforma de formación, entrenamiento técnico, simulación SCADA e integridad industrial bajo normativas ISO, API, ASME, IRAM y NFPA.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        menfa: {
+                            orange: '#FF5B00',
+                            violet: '#2D004B',
+                            white: '#FFFFFF',
+                            carbon: '#1C1E21',
+                            dark: '#121315',
+                            gray: '#2A2D32'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 91, 0, 0.12) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glow-orange {
+            box-shadow: 0 0 50px -10px rgba(255, 91, 0, 0.25);
+        }
+        .glow-violet {
+            box-shadow: 0 0 50px -10px rgba(45, 0, 75, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-menfa-carbon text-gray-200 font-sans antialiased selection:bg-menfa-orange selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-menfa-carbon/90 backdrop-blur-md border-b border-menfa-gray/50">
+        <div class="max-w-7xl mx-mx-auto px-6 h-20 flex items-center justify-between mx-auto">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <span class="bg-menfa-orange text-white font-extrabold text-2xl px-3 py-1 rounded tracking-wider transition-transform group-hover:scale-105">MENFA</span>
+                <span class="text-xs tracking-widest text-gray-400 uppercase font-mono hidden sm:inline-block border-l border-gray-700 pl-3">Ecosistema Industrial</span>
+            </a>
+
+            <!-- Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#ecosistema" class="hover:text-menfa-orange transition-colors">Ecosistema</a>
+                <a href="#pilares" class="hover:text-menfa-orange transition-colors">Pilares</a>
+                <a href="#normativas" class="hover:text-menfa-orange transition-colors">Normativas</a>
+                <a href="#contacto" class="hover:text-menfa-orange transition-colors">Empresas</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <a href="#contacto" class="bg-menfa-orange hover:bg-orange-600 text-white font-semibold text-sm px-5 py-2.5 rounded transition-all shadow-lg hover:shadow-orange-500/20">
+                Contacto B2B
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (Pieza Madre Visual) -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-grid-pattern">
+        <!-- Ambient Lighting Gradients -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-menfa-violet/40 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[250px] bg-menfa-orange/20 blur-[100px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Text -->
+                <div class="lg:col-span-7 space-y-6 text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-menfa-violet/60 border border-menfa-violet text-orange-300 text-xs font-mono uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-menfa-orange animate-pulse"></span>
+                        Plataforma de Formación & Tecnología Aplicada
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                        Ecosistema de <br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-menfa-orange via-orange-400 to-white">Capacitación y Tecnología</span>
+                    </h1>
+
+                    <p class="text-lg text-gray-300 max-w-2xl font-normal leading-relaxed">
+                        Formación técnica de alta exigencia, entrenamientos virtuales con simuladores SCADA, inspección de integridad de activos y laboratorios industriales bajo estándares internacionales.
+                    </p>
+
+                    <div class="pt-4 flex flex-wrap gap-4 items-center">
+                        <a href="#pilares" class="bg-menfa-orange hover:bg-orange-600 text-white font-bold px-7 py-3.5 rounded shadow-lg transition-all flex items-center gap-2">
+                            Explorar Ecosistema
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </a>
+                        <a href="#normativas" class="border border-gray-600 hover:border-menfa-orange text-gray-300 hover:text-white font-semibold px-6 py-3.5 rounded transition-all bg-menfa-dark/50">
+                            Ver Normativas (ISO / ASME / API)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Graphic Container / Simulated Master Artwork -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative bg-menfa-dark border border-menfa-gray rounded-xl p-4 glow-orange">
+                        <!-- Technical Badge Header -->
+                        <div class="flex items-center justify-between pb-3 border-b border-gray-800 text-xs font-mono text-gray-400">
+                            <span class="flex items-center gap-2"><span class="w-2 h-2 bg-emerald-500 rounded-full"></span> SYSTEM ONLINE</span>
+                            <span>IDENTIDAD: REALISTA INDUSTRIAL</span>
+                        </div>
+                        
+                        <!-- Main Artwork Placeholder Box -->
+                        <div class="mt-4 relative aspect-[4/3] rounded-lg overflow-hidden bg-menfa-gray/30 border border-gray-800 flex flex-col justify-between p-6">
+                            <!-- Background Simulation Texture -->
+                            <div class="absolute inset-0 bg-gradient-to-tr from-menfa-violet/80 via-menfa-carbon/90 to-menfa-orange/30 opacity-90"></div>
+                            
+                            <!-- Internal Content Layer -->
+                            <div class="relative z-10 flex justify-between items-start">
+                                <span class="bg-menfa-orange/90 text-white font-black text-xl px-3 py-1 rounded shadow">MENFA</span>
+                                <span class="font-mono text-xs text-orange-200 bg-black/40 px-2 py-1 rounded backdrop-blur">SCADA // NDT // LAB</span>
+                            </div>
+
+                            <div class="relative z-10 space-y-2">
+                                <p class="text-xs font-mono text-orange-400 uppercase tracking-widest">Inspección & Simulación</p>
+                                <h3 class="text-xl font-bold text-white">Ambiente Técnico Integrado</h3>
+                                <div class="flex gap-2 pt-2">
+                                    <span class="text-[10px] bg-white/10 px-2 py-0.5 rounded text-gray-300">EPP Certificado</span>
+                                    <span class="text-[10px] bg-white/10 px-2 py-0.5 rounded text-gray-300">Gemelo Digital</span>
+                                    <span class="text-[10px] bg-white/10 px-2 py-0.5 rounded text-gray-300">NDT Ultrasonido</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Technical Footer Stats -->
+                        <div class="mt-4 grid grid-cols-3 gap-2 text-center font-mono text-xs border-t border-gray-800 pt-3 text-gray-400">
+                            <div><span class="block text-white font-bold text-sm">5</span> PILARES</div>
+                            <div><span class="block text-white font-bold text-sm">100%</span> REALISTA</div>
+                            <div><span class="block text-menfa-orange font-bold text-sm">B2B</span> READY</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NORMATIVAS / TICKER BANNER -->
+    <section id="normativas" class="py-8 bg-menfa-dark border-y border-menfa-gray/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-center font-mono text-xs text-gray-400 uppercase tracking-widest mb-6">Alineación Técnica & Estándares Internacionales</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 font-mono text-lg font-bold text-gray-300">
+                <span class="hover:text-menfa-orange transition-colors flex items-center gap-2"><span class="text-menfa-orange">•</span> ISO</span>
+                <span class="hover:text-menfa-orange transition-colors flex items-center gap-2"><span class="text-menfa-orange">•</span> API</span>
+                <span class="hover:text-menfa-orange transition-colors flex items-center gap-2"><span class="text-menfa-orange">•</span> ASME</span>
+                <span class="hover:text-menfa-orange transition-colors flex items-center gap-2"><span class="text-menfa-orange">•</span> IRAM</span>
+                <span class="hover:text-menfa-orange transition-colors flex items-center gap-2"><span class="text-menfa-orange">•</span> NFPA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ECOSISTEMA DE 5 PILARES -->
+    <section id="pilares" class="py-24 bg-menfa-carbon relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs font-mono text-menfa-orange uppercase tracking-widest">Arquitectura del Ecosistema</h2>
+                <p class="text-3xl md:text-4xl font-extrabold text-white">Cinco Pilares Integrados en una Sola Plataforma</p>
+                <p class="text-gray-400 text-sm">Consolidación técnica para la industria pesada, energía, manufactura y servicios de alta complejidad.</p>
+            </div>
+
+            <!-- Grid de Pilares -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Pilar 1 -->
+                <div class="bg-menfa-dark border border-menfa-gray p-8 rounded-xl hover:border-menfa-orange transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-menfa-orange/10 border border-menfa-orange/30 text-menfa-orange rounded-lg flex items-center justify-center font-mono font-bold text-lg mb-6 group-hover:bg-menfa-orange group-hover:text-white transition-all">
+                        01
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Capacitaciones</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Formación técnica y profesional especializada. Programas enfocados en la práctica real con equipamiento de alta tecnología y transferencia de competencias operativas.
+                    </p>
+                    <span class="text-xs font-mono text-orange-400 uppercase tracking-wider block">Formación Profesional & Technical Upskilling</span>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="bg-menfa-dark border border-menfa-gray p-8 rounded-xl hover:border-menfa-violet transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-menfa-violet/30 border border-menfa-violet text-purple-300 rounded-lg flex items-center justify-center font-mono font-bold text-lg mb-6 group-hover:bg-menfa-violet group-hover:text-white transition-all">
+                        02
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Simuladores</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Entrenamiento virtual y escenarios operativos de contingencia. Consolas SCADA, gemelos digitales y réplicas de entornos de proceso de alta fidelidad.
+                    </p>
+                    <span class="text-xs font-mono text-purple-400 uppercase tracking-wider block">Entornos Virtuales & SCADA</span>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="bg-menfa-dark border border-menfa-gray p-8 rounded-xl hover:border-menfa-orange transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-menfa-orange/10 border border-menfa-orange/30 text-menfa-orange rounded-lg flex items-center justify-center font-mono font-bold text-lg mb-6 group-hover:bg-menfa-orange group-hover:text-white transition-all">
+                        03
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Normativas</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Alineación rigurosa con estándares internacionales. Auditoría, cumplimiento y estructuración técnica en códigos ISO, API, ASME, IRAM y NFPA.
+                    </p>
+                    <span class="text-xs font-mono text-orange-400 uppercase tracking-wider block">Cumplimiento & Auditoría Técnica</span>
+                </div>
+
+                <!-- Pilar 4 -->
+                <div class="bg-menfa-dark border border-menfa-gray p-8 rounded-xl hover:border-menfa-violet transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-menfa-violet/30 border border-menfa-violet text-purple-300 rounded-lg flex items-center justify-center font-mono font-bold text-lg mb-6 group-hover:bg-menfa-violet group-hover:text-white transition-all">
+                        04
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Integridad</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Inspección no destructiva (NDT), mantenimiento predictivo, análisis de confiabilidad de activos y evaluación de extensión de vida útil.
+                    </p>
+                    <span class="text-xs font-mono text-purple-400 uppercase tracking-wider block">Mantenimiento Predictivo & NDT</span>
+                </div>
+
+                <!-- Pilar 5 -->
+                <div class="bg-menfa-dark border border-menfa-gray p-8 rounded-xl hover:border-menfa-orange transition-all duration-300 group md:col-span-2 lg:col-span-1">
+                    <div class="w-12 h-12 bg-menfa-orange/10 border border-menfa-orange/30 text-menfa-orange rounded-lg flex items-center justify-center font-mono font-bold text-lg mb-6 group-hover:bg-menfa-orange group-hover:text-white transition-all">
+                        05
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Laboratorios</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Práctica instrumental, ensayos de materiales, calibración de sensores de alta precisión y análisis experimental de fallas.
+                    </p>
+                    <span class="text-xs font-mono text-orange-400 uppercase tracking-wider block">Práctica & Calibración de Banco</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO PARA EMPRESAS -->
+    <section id="contacto" class="py-20 bg-menfa-dark border-t border-menfa-gray">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-menfa-carbon border border-menfa-gray p-8 md:p-12 rounded-2xl glow-violet">
+                <div class="text-center space-y-3 mb-10">
+                    <span class="text-xs font-mono text-menfa-orange uppercase tracking-widest">Atención Corporativa B2B</span>
+                    <h2 class="text-3xl font-extrabold text-white">Lleve su Operación al Siguiente Nivel</h2>
+                    <p class="text-gray-400 text-sm">Solicite una propuesta personalizada para el desarrollo de simuladores, planes de capacitación o inspección de integridad.</p>
+                </div>
+
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-mono text-gray-300 uppercase mb-2">Nombre y Apellido</label>
+                            <input type="text" placeholder="Ing. Juan Pérez" class="w-full bg-menfa-dark border border-gray-700 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-menfa-orange transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-mono text-gray-300 uppercase mb-2">Email Corporativo</label>
+                            <input type="email" placeholder="jperez@empresa.com" class="w-full bg-menfa-dark border border-gray-700 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-menfa-orange transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-mono text-gray-300 uppercase mb-2">Empresa / Organización</label>
+                            <input type="text" placeholder="Nombre de la compañía" class="w-full bg-menfa-dark border border-gray-700 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-menfa-orange transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-mono text-gray-300 uppercase mb-2">Pilar de Interés Principal</label>
+                            <select class="w-full bg-menfa-dark border border-gray-700 rounded px-4 py-3 text-sm text-gray-300 focus:outline-none focus:border-menfa-orange transition-colors">
+                                <option>Ecosistema Integral (Todos los pilares)</option>
+                                <option>Capacitaciones TÉCNICAS</option>
+                                <option>Simuladores SCADA / Virtuales</option>
+                                <option>Normativas & Cumplimiento</option>
+                                <option>Integridad & Mantenimiento NDT</option>
+                                <option>Ensayos de Laboratorio</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-mono text-gray-300 uppercase mb-2">Detalle de la Consulta</label>
+                        <textarea rows="4" placeholder="Describa el requerimiento operativo o de entrenamiento..." class="w-full bg-menfa-dark border border-gray-700 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-menfa-orange transition-colors"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-menfa-orange hover:bg-orange-600 text-white font-bold py-4 rounded transition-all shadow-lg hover:shadow-orange-500/20 text-sm tracking-wider uppercase">
+                        Enviar Requerimiento Institucional
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 bg-menfa-dark border-t border-menfa-gray/40 text-xs font-mono text-gray-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <span class="bg-menfa-orange text-white font-extrabold px-2 py-0.5 rounded text-sm">MENFA</span>
+                <span>Ecosistema de Capacitación y Tecnología</span>
+            </div>
+            <p>© 2026 MENFA. Todos los derechos reservados. Arquitectura de Marca Monolítica.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
