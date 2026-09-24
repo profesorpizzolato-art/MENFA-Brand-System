@@ -1,0 +1,9 @@
+---
+
+## 3. Beneficios de Tenerlo en GitHub
+
+1. **Unica Fuente de Verdad (Single Source of Truth):** Cualquier diseñador o programador de la web de MENFA consume los logos, colores y fuentes directamente de la fuente oficial.
+2. **Documentación Abierta / Privada:** Puedes mantenerlo privado para el equipo de desarrollo/diseño o hacerlo público como carta de presentación institucional de nivel de ingeniería.
+3. **Control de Versiones:** Si la marca evoluciona o se agregan subsistemas/marcas hijas, queda el historial documentado con `git commit`.
+
+¿Te gustaría que te arme también el archivo `colors.json` o la configuración de **GitHub Pages** para montar una landing page interactiva con el manual de marca?
