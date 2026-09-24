@@ -1,0 +1,27 @@
+MENFA-Brand-System/
+├── README.md                      <-- Documentación principal (la propuesta presentada)
+├── LICENSE                        <-- Licencia de uso / Propiedad Intelectual
+├── assets/
+│   ├── brand/
+│   │   ├── logo-menfa-primary.svg
+│   │   ├── logo-menfa-white.svg
+│   │   └── logo-menfa-orange.svg
+│   ├── master-artwork/
+│   │   ├── menfa-master-piece-4k.png
+│   │   └── menfa-master-piece-vector.ai
+│   ├── pillars/
+│   │   ├── 01-capacitaciones.png
+│   │   ├── 02-simuladores.png
+│   │   ├── 03-normativas.png
+│   │   ├── 04-integridad.png
+│   │   └── 05-laboratorios.png
+│   └── templates/
+│       ├── linkedin-banner.png
+│       └── pitch-deck-template.pptx
+├── styles/
+│   ├── colors.json                <-- Tokens de color para web/app
+│   ├── colors.scss                <-- Variables de Sass
+│   └── tailwind.config.js         <-- Configuración de paleta para Tailwind CSS
+└── docs/
+    ├── GUIDELINES.md              <-- Manual de marca extendido
+    └── PROMPTS.md                 <-- Banco de prompts para generación de imágenes
