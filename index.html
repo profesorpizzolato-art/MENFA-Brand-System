@@ -63,6 +63,7 @@
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
                 <a href="#ecosistema" class="hover:text-menfa-orange transition-colors">Ecosistema</a>
                 <a href="#pilares" class="hover:text-menfa-orange transition-colors">Pilares</a>
+                <a href="#simulador-consola" class="hover:text-menfa-orange transition-colors">Simuladores</a>
                 <a href="#normativas" class="hover:text-menfa-orange transition-colors">Normativas</a>
                 <a href="#contacto" class="hover:text-menfa-orange transition-colors">Empresas</a>
             </nav>
@@ -98,9 +99,8 @@
                     </p>
 
                     <div class="pt-4 flex flex-wrap gap-4 items-center">
-                        <a href="#pilares" class="bg-menfa-orange hover:bg-orange-600 text-white font-bold px-7 py-3.5 rounded shadow-lg transition-all flex items-center gap-2">
-                            Explorar Ecosistema
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <a href="#simulador-consola" class="bg-menfa-orange hover:bg-orange-600 text-white font-bold px-7 py-3.5 rounded shadow-lg transition-all flex items-center gap-2">
+                            Probar Simuladores en Vivo 🚀
                         </a>
                         <a href="#normativas" class="border border-gray-600 hover:border-menfa-orange text-gray-300 hover:text-white font-semibold px-6 py-3.5 rounded transition-all bg-menfa-dark/50">
                             Ver Normativas (ISO / ASME / API)
@@ -171,6 +171,7 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Pilar 1 -->
                 <div class="bg-menfa-dark border border-menfa-gray p-8 rounded-xl hover:border-menfa-orange transition-all duration-300 group">
                     <div class="w-12 h-12 bg-menfa-orange/10 border border-menfa-orange/30 text-menfa-orange rounded-lg flex items-center justify-center font-mono font-bold text-lg mb-6 group-hover:bg-menfa-orange group-hover:text-white transition-all">01</div>
                     <h3 class="text-xl font-bold text-white mb-3">Capacitaciones</h3>
@@ -178,13 +179,22 @@
                     <span class="text-xs font-mono text-orange-400 uppercase tracking-wider block">Formación Profesional & Technical Upskilling</span>
                 </div>
 
+                <!-- Pilar 2: SIMULADORES CON LINKS DIRECTOS -->
                 <div class="bg-menfa-dark border border-menfa-gray p-8 rounded-xl hover:border-menfa-violet transition-all duration-300 group">
                     <div class="w-12 h-12 bg-menfa-violet/30 border border-menfa-violet text-purple-300 rounded-lg flex items-center justify-center font-mono font-bold text-lg mb-6 group-hover:bg-menfa-violet group-hover:text-white transition-all">02</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Simuladores</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Entrenamiento virtual y escenarios operativos de contingencia. Consolas SCADA, gemelos digitales y réplicas de entornos de proceso de alta fidelidad.</p>
-                    <span class="text-xs font-mono text-purple-400 uppercase tracking-wider block">Entornos Virtuales & SCADA</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Simuladores Operativos</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Entrenamiento virtual en consolas SCADA, Perforación Avanzada (ExxonMobil Top 40) y Planta de Tratamiento de Crudo (PTC MENFA).</p>
+                    <div class="space-y-2 pt-2">
+                        <a href="https://share.streamlit.io/" target="_blank" class="block text-center bg-menfa-violet hover:bg-purple-900 text-white font-mono text-xs py-2 rounded transition-all">
+                            🏗️ Simulador de Perforación Pro 3.0 ↗
+                        </a>
+                        <a href="#simulador-consola" class="block text-center border border-menfa-gray hover:border-menfa-orange text-gray-300 text-xs font-mono py-2 rounded transition-all">
+                            🖥️ Ver Consola Embebida
+                        </a>
+                    </div>
                 </div>
 
+                <!-- Pilar 3 -->
                 <div class="bg-menfa-dark border border-menfa-gray p-8 rounded-xl hover:border-menfa-orange transition-all duration-300 group">
                     <div class="w-12 h-12 bg-menfa-orange/10 border border-menfa-orange/30 text-menfa-orange rounded-lg flex items-center justify-center font-mono font-bold text-lg mb-6 group-hover:bg-menfa-orange group-hover:text-white transition-all">03</div>
                     <h3 class="text-xl font-bold text-white mb-3">Normativas</h3>
@@ -192,6 +202,7 @@
                     <span class="text-xs font-mono text-orange-400 uppercase tracking-wider block">Cumplimiento & Auditoría Técnica</span>
                 </div>
 
+                <!-- Pilar 4 -->
                 <div class="bg-menfa-dark border border-menfa-gray p-8 rounded-xl hover:border-menfa-violet transition-all duration-300 group">
                     <div class="w-12 h-12 bg-menfa-violet/30 border border-menfa-violet text-purple-300 rounded-lg flex items-center justify-center font-mono font-bold text-lg mb-6 group-hover:bg-menfa-violet group-hover:text-white transition-all">04</div>
                     <h3 class="text-xl font-bold text-white mb-3">Integridad</h3>
@@ -199,12 +210,39 @@
                     <span class="text-xs font-mono text-purple-400 uppercase tracking-wider block">Mantenimiento Predictivo & NDT</span>
                 </div>
 
+                <!-- Pilar 5 -->
                 <div class="bg-menfa-dark border border-menfa-gray p-8 rounded-xl hover:border-menfa-orange transition-all duration-300 group md:col-span-2 lg:col-span-1">
                     <div class="w-12 h-12 bg-menfa-orange/10 border border-menfa-orange/30 text-menfa-orange rounded-lg flex items-center justify-center font-mono font-bold text-lg mb-6 group-hover:bg-menfa-orange group-hover:text-white transition-all">05</div>
                     <h3 class="text-xl font-bold text-white mb-3">Laboratorios</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-6">Práctica instrumental, ensayos de materiales, calibración de sensores de alta precisión y análisis experimental de fallas.</p>
                     <span class="text-xs font-mono text-orange-400 uppercase tracking-wider block">Práctica & Calibración de Banco</span>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: SIMULADORES EN VIVO EMBEBIDOS -->
+    <section id="simulador-consola" class="py-20 bg-menfa-dark border-t border-menfa-gray">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                <div>
+                    <span class="text-xs font-mono text-menfa-orange uppercase tracking-widest">Entrenamiento Virtual de Procesos</span>
+                    <h2 class="text-3xl font-extrabold text-white">Consola de Simulación Operativa MENFA</h2>
+                    <p class="text-gray-400 text-xs font-mono mt-1">Acceso interactivo en vivo al Gemelo Digital y Room de Operaciones</p>
+                </div>
+                <a href="https://share.streamlit.io/" target="_blank" class="bg-menfa-orange hover:bg-orange-600 text-white font-mono text-xs px-5 py-3 rounded shadow transition-all">
+                    Abrir en Pantalla Completa ↗
+                </a>
+            </div>
+
+            <!-- Frame donde corre la App de Streamlit -->
+            <div class="w-full h-[800px] bg-menfa-carbon border border-menfa-gray rounded-2xl overflow-hidden shadow-2xl relative">
+                <iframe 
+                    src="https://share.streamlit.io/" 
+                    class="w-full h-full border-0"
+                    allow="geolocation; microphone; camera"
+                    title="Consola de Simulación MENFA">
+                </iframe>
             </div>
         </div>
     </section>
