@@ -216,7 +216,7 @@
         </div>
     </section>
 
-    <!-- HUB DE SIMULADORES INTERACTIVOS B2B -->
+    <!-- HUB DE SIMULADORES INTERACTIVOS B2B (MIS 5 APLICACIONES) -->
     <section id="simuladores" class="py-20 bg-menfa-dark border-t border-menfa-gray">
         <div class="max-w-7xl mx-auto px-6">
             
@@ -225,82 +225,128 @@
                     <span class="text-xs font-mono text-menfa-orange uppercase tracking-widest">• Centro de Entrenamiento Virtual</span>
                     <h2 class="text-3xl font-extrabold text-white mt-1">Consolas Operativas & Gemelos Digitales</h2>
                     <p class="text-gray-400 text-sm mt-2 max-w-xl">
-                        Plataformas de simulación interactiva desarrolladas bajo física real de proceso, protocolos ExxonMobil Top 40 y normativa internacional.
+                        Plataformas de simulación interactiva desplegadas en Streamlit bajo física real de proceso, protocolos industriales y normativas vigentes.
                     </p>
                 </div>
                 <div class="font-mono text-xs text-orange-400 bg-menfa-carbon px-4 py-2 rounded border border-gray-800">
-                    ESTATUS: SISTEMA OPERATIVO
+                    5 APLICACIONES EN LINEA
                 </div>
             </div>
 
             <!-- Grilla de Tarjetas de Simuladores -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Simulador 1: Perforación Pro -->
+                <!-- 1. Perforación Avanzada -->
                 <div class="bg-menfa-carbon border border-menfa-gray rounded-xl p-6 flex flex-col justify-between hover:border-menfa-orange transition-all duration-300 group glow-orange">
                     <div>
                         <div class="flex justify-between items-center mb-4">
-                            <span class="text-xs font-mono bg-menfa-orange/20 text-orange-400 px-2.5 py-1 rounded border border-menfa-orange/30">VERSION 3.0</span>
+                            <span class="text-xs font-mono bg-menfa-orange/20 text-orange-400 px-2.5 py-1 rounded border border-menfa-orange/30">UPSTREAM</span>
                             <span class="text-xs font-mono text-gray-400">ExxonMobil Top 40</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-menfa-orange transition-colors">Simulador de Perforación Pro</h3>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-menfa-orange transition-colors">Perforación Avanzada</h3>
                         <p class="text-gray-400 text-xs leading-relaxed mb-6">
-                            Consola interactiva con física de fondo, control direccional MWD, panel de control de presiones (BOP), prevención de Stick-Slip y monitoreo de lecho de recortes.
+                            Consola con física de fondo, control direccional MWD, panel de control de presiones (BOP), prevención de Stick-Slip y maniobras POOH.
                         </p>
                     </div>
                     <div>
                         <div class="border-t border-gray-800 pt-4 mb-4 flex justify-between text-[11px] font-mono text-gray-400">
+                            <span>REPO: sim_perf_avanzad</span>
                             <span>SISTEMA: DRILLING</span>
-                            <span>CERTIFICACIÓN: SI</span>
                         </div>
-                        <a href="https://menfa-perforacion.streamlit.app/" target="_blank" class="w-full bg-menfa-orange hover:bg-orange-600 text-white font-mono text-xs font-bold py-3 px-4 rounded transition-all text-center block shadow">
-                            Lanzar Consola de Perforación ↗
+                        <a href="https://sim-perf-avanzad.streamlit.app" target="_blank" class="w-full bg-menfa-orange hover:bg-orange-600 text-white font-mono text-xs font-bold py-3 px-4 rounded transition-all text-center block shadow">
+                            Lanzar Consola ↗
                         </a>
                     </div>
                 </div>
 
-                <!-- Simulador 2: PTC MENFA (SCADA) -->
+                <!-- 2. Producción / PTC MENFA -->
                 <div class="bg-menfa-carbon border border-menfa-gray rounded-xl p-6 flex flex-col justify-between hover:border-menfa-violet transition-all duration-300 group glow-violet">
                     <div>
                         <div class="flex justify-between items-center mb-4">
-                            <span class="text-xs font-mono bg-menfa-violet/40 text-purple-300 px-2.5 py-1 rounded border border-menfa-violet">SCADA / NDT</span>
+                            <span class="text-xs font-mono bg-menfa-violet/40 text-purple-300 px-2.5 py-1 rounded border border-menfa-violet">MIDSTREAM</span>
                             <span class="text-xs font-mono text-gray-400">PTC MENFA</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">Planta Tratamiento de Crudo</h3>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">Producción & Tratamiento</h3>
                         <p class="text-gray-400 text-xs leading-relaxed mb-6">
-                            Simulación de Análisis Nodal IPR-VLP, separación trifásica V-01, alertas Carryover/Blowby y módulo de gestión de Mantenimiento e Integridad.
+                            Análisis Nodal IPR-VLP, separación trifásica V-01, tratamiento de emulsiones BSW, unidad LACT y Mantenimiento de activos.
                         </p>
                     </div>
                     <div>
                         <div class="border-t border-gray-800 pt-4 mb-4 flex justify-between text-[11px] font-mono text-gray-400">
+                            <span>REPO: produccion</span>
                             <span>SISTEMA: PROCESS</span>
-                            <span>CUMPLIMIENTO: API/ASME</span>
                         </div>
-                        <a href="https://share.streamlit.io/" target="_blank" class="w-full bg-menfa-violet hover:bg-purple-900 text-white font-mono text-xs font-bold py-3 px-4 rounded transition-all text-center block shadow">
-                            Lanzar Consola PTC SCADA ↗
+                        <a href="https://produccion.streamlit.app" target="_blank" class="w-full bg-menfa-violet hover:bg-purple-900 text-white font-mono text-xs font-bold py-3 px-4 rounded transition-all text-center block shadow">
+                            Lanzar Consola ↗
                         </a>
                     </div>
                 </div>
 
-                <!-- Simulador 3: Control de Pozos & BOP -->
+                <!-- 3. Plantas de Gas -->
                 <div class="bg-menfa-carbon border border-menfa-gray rounded-xl p-6 flex flex-col justify-between hover:border-menfa-orange transition-all duration-300 group">
                     <div>
                         <div class="flex justify-between items-center mb-4">
-                            <span class="text-xs font-mono bg-white/10 text-gray-300 px-2.5 py-1 rounded">WELL CONTROL</span>
-                            <span class="text-xs font-mono text-gray-400">IWCF Level</span>
+                            <span class="text-xs font-mono bg-white/10 text-gray-300 px-2.5 py-1 rounded">GAS PROCESSING</span>
+                            <span class="text-xs font-mono text-gray-400">Planta de Gas</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-menfa-orange transition-colors">Control de Pozos & BOP</h3>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-menfa-orange transition-colors">Plantas de Gas MENFA</h3>
                         <p class="text-gray-400 text-xs leading-relaxed mb-6">
-                            Maniobras de Shut-In, gestión de Choke Manifold, cálculo de contrapresión de gas y mitigación de brotes en tiempo real.
+                            Acondicionamiento de gas natural, deshidratación por TEG, endulzamiento con aminas, compresión y control de punto de rocío (Dew Point).
                         </p>
                     </div>
                     <div>
                         <div class="border-t border-gray-800 pt-4 mb-4 flex justify-between text-[11px] font-mono text-gray-400">
-                            <span>SISTEMA: SAFETY</span>
-                            <span>MODO: CONTINGENCIA</span>
+                            <span>REPO: plantas_gas_menfa</span>
+                            <span>SISTEMA: GAS</span>
                         </div>
-                        <a href="https://share.streamlit.io/" target="_blank" class="w-full border border-gray-700 hover:border-menfa-orange text-gray-300 hover:text-white font-mono text-xs font-bold py-3 px-4 rounded transition-all text-center block bg-menfa-dark">
-                            Lanzar Consola de Control ↗
+                        <a href="https://plantas-gas-menfa.streamlit.app" target="_blank" class="w-full border border-gray-700 hover:border-menfa-orange text-gray-300 hover:text-white font-mono text-xs font-bold py-3 px-4 rounded transition-all text-center block bg-menfa-dark">
+                            Lanzar Consola ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4. Gasoductos -->
+                <div class="bg-menfa-carbon border border-menfa-gray rounded-xl p-6 flex flex-col justify-between hover:border-menfa-violet transition-all duration-300 group">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-mono bg-menfa-violet/40 text-purple-300 px-2.5 py-1 rounded border border-menfa-violet">TRANSPORT</span>
+                            <span class="text-xs font-mono text-gray-400">Redes & Ductos</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">Simulador de Gasoductos</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                            Cálculo de caídas de presión en redes, estaciones de compresión, perfil de temperaturas y transporte de fluido compresible.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="border-t border-gray-800 pt-4 mb-4 flex justify-between text-[11px] font-mono text-gray-400">
+                            <span>REPO: simulador-gasoductos-menfa</span>
+                            <span>SISTEMA: DUCTOS</span>
+                        </div>
+                        <a href="https://simulador-gasoductos-menfa.streamlit.app" target="_blank" class="w-full border border-gray-700 hover:border-menfa-violet text-gray-300 hover:text-white font-mono text-xs font-bold py-3 px-4 rounded transition-all text-center block bg-menfa-dark">
+                            Lanzar Consola ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5. Monitoreo Térmico de Planta (MTLP) -->
+                <div class="bg-menfa-carbon border border-menfa-gray rounded-xl p-6 flex flex-col justify-between hover:border-menfa-orange transition-all duration-300 group md:col-span-2 lg:col-span-1">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-mono bg-menfa-orange/20 text-orange-400 px-2.5 py-1 rounded border border-menfa-orange/30">MONITOREO</span>
+                            <span class="text-xs font-mono text-gray-400">MTLP Pro</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-menfa-orange transition-colors">Monitoreo Térmico & Lab</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                            Lazo de control de temperatura de procesos, eficiencia de calentadores/hornos, balance térmico e instrumentación de campo.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="border-t border-gray-800 pt-4 mb-4 flex justify-between text-[11px] font-mono text-gray-400">
+                            <span>REPO: mtlp</span>
+                            <span>SISTEMA: LAB/THERMAL</span>
+                        </div>
+                        <a href="https://mtlp.streamlit.app" target="_blank" class="w-full border border-gray-700 hover:border-menfa-orange text-gray-300 hover:text-white font-mono text-xs font-bold py-3 px-4 rounded transition-all text-center block bg-menfa-dark">
+                            Lanzar Consola ↗
                         </a>
                     </div>
                 </div>
@@ -308,7 +354,6 @@
             </div>
         </div>
     </section>
-
     <!-- FORMULARIO CONTACTO B2B -->
     <section id="contacto" class="py-20 bg-menfa-dark border-t border-menfa-gray">
         <div class="max-w-4xl mx-auto px-6">
